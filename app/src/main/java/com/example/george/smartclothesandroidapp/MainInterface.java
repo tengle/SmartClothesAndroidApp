@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.RadioButton;
 
 
 /**
@@ -113,6 +114,7 @@ public class MainInterface extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.measureMuscleActivityButton).setOnTouchListener(navigateToMuscleCalculation);
+        findViewById(R.id.userCreationButton).setOnTouchListener(navigateToUserCreation);
     }
 
     @Override
@@ -148,6 +150,14 @@ public class MainInterface extends Activity {
         }
     };
 
+    View.OnTouchListener navigateToUserCreation = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            setContentView(R.layout.user_creation);
+            return false;
+        }
+    };
+
     Handler mHideHandler = new Handler();
     Runnable mHideRunnable = new Runnable() {
         @Override
@@ -163,5 +173,23 @@ public class MainInterface extends Activity {
     private void delayedHide(int delayMillis) {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
+    }
+    public void selectedSex(View view)
+    {
+        boolean clicked = ((RadioButton) view).isChecked();
+
+        switch(view.getId())
+        {
+            case R.id.female_RadioButton:
+                if (clicked)
+                {
+
+                }
+            case R.id.male_radioButton:
+                if (clicked)
+                {
+
+                }
+        }
     }
 }
