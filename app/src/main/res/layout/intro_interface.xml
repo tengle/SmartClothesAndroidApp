@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="Measure Muscle Activity"
             android:id="@+id/measureMuscleActivityButton"
-            android:layout_gravity="center_horizontal|top"
+            android:layout_gravity="center"
             android:background="@android:color/darker_gray"
             android:textColor="@android:color/black"
             android:nestedScrollingEnabled="false"
@@ -54,10 +54,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create User"
-            android:id="@+id/createUser_Button"
-            android:layout_gravity="center_horizontal|bottom"
-            android:background="#da7d7d7d" />
+            android:text="Enter user information"
+            android:id="@+id/userCreationButton"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black" />
 
     </FrameLayout>
 

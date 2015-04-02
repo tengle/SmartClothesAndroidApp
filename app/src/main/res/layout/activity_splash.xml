@@ -8,27 +8,27 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MYS"
+        android:text="SmartClothes"
         android:id="@+id/companyName"
         android:textColor="#ffeeff10"
-        android:textSize="100dp"
+        android:textSize="60dp"
         android:textAlignment="center" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SmartClothes"
+        android:text="Presented by MYS"
         android:id="@+id/appName"
         android:layout_weight="0.03"
         android:textAlignment="center"
         android:textColor="#ffeeff10"
-        android:textSize="50dp" />
+        android:textSize="45dp" />
 
     <ImageView
         android:layout_width="272dp"
         android:layout_height="400dp"
         android:id="@+id/companyLogo"
-
+        android:src="@drawable/mys_logo"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
