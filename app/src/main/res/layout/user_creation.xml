@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="What should we call you?"
+        android:hint="What should we call you?"
         android:ems="10"
         android:id="@+id/username_TextBox"
         android:textColor="#ffffffff" />
@@ -38,7 +38,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/height_TextBox"
-        android:text="In inches please"
+        android:hint="In inches please"
         android:textColor="#ffffffff" />
 
     <TextView
@@ -56,7 +56,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/weight_TextBox"
-        android:text="To the nearest pound."
+        android:hint="To the nearest pound."
         android:textColor="#ffffffff" />
 
     <TextView
@@ -74,7 +74,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/age_TextBox"
-        android:text="In years"
+        android:hint="In years"
         android:textColor="#ffffffff" />
 
     <TextView
@@ -86,22 +86,29 @@
         android:textSize="35sp"
         android:textColor="#ffffffff" />
 
-    <RadioButton
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Female"
-        android:id="@+id/female_RadioButton"
-        android:clickable="true"
-        android:textColor="#ffffffff"
-        android:enabled="true" />
+        android:id="@+id/selectSex_RadioGroup">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male"
-        android:id="@+id/male_radioButton"
-        android:textColor="#ffffffff"
-        android:enabled="true" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/female_RadioButton"
+            android:clickable="true"
+            android:textColor="#ffffffff"
+            android:enabled="true"
+            android:onClick="selectedSex"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/male_radioButton"
+            android:textColor="#ffffffff"
+            android:enabled="true"
+            android:onClick="selectedSex"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
