@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:nestedScrollingEnabled="false"
     android:background="#ff000000">
 
@@ -30,7 +30,7 @@
         android:text="Height:"
         android:id="@+id/height_Label"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ff1f20ff" />
 
     <EditText
         android:layout_width="match_parent"
@@ -118,5 +118,31 @@
         android:id="@+id/metabolism_Label"
         android:textSize="35sp"
         android:textColor="#ffffffff" />
+
+    <RadioGroup
+        android:layout_width="290dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:id="@+id/high_RadioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:id="@+id/average_RadioButton"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low"
+            android:id="@+id/low_RadioButton" />
+    </RadioGroup>
 
 </LinearLayout>
