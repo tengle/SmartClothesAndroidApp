@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -113,6 +114,8 @@ public class MainInterface extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.measureMuscleActivityButton).setOnTouchListener(navigateToMuscleCalculation);
+        findViewById(R.id.createUser_Button).setOnTouchListener(navigateToUserCreation);
+
     }
 
     @Override
@@ -144,6 +147,14 @@ public class MainInterface extends Activity {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
             setContentView(R.layout.muscle_calculation);
+            return false;
+        }
+    };
+
+    View.OnTouchListener navigateToUserCreation = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            setContentView(R.layout.user_creation);
             return false;
         }
     };

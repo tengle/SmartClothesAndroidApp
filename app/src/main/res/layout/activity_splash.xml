@@ -28,7 +28,7 @@
         android:layout_width="272dp"
         android:layout_height="400dp"
         android:id="@+id/companyLogo"
-        android:src="@drawable/mysLogo"
+
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
