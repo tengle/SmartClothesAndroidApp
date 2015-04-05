@@ -2,13 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/mucleCalculationLayout">
+    android:id="@+id/userCreation_Button"
+    android:background="@android:color/black"
+    android:weightSum="1">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/muscleArm"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/muscle_diagram"
         />
+
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:text="Meseasured Usage of Bicep"
+        android:id="@+id/bicep_TextView"
+        android:textColor="#ffeeff10"
+        android:textSize="25dp"
+        android:textIsSelectable="false" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bicep_ProgressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measured Usage of Tricep"
+        android:id="@+id/tricept_TextView"
+        android:textColor="#ffeeff10"
+        android:textSize="25dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tricep_ProgressBar" />
 </LinearLayout>

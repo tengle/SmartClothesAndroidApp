@@ -12,7 +12,7 @@
         android:text="Username:"
         android:id="@+id/username_Label"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffeeff10" />
 
     <EditText
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:text="Height:"
         android:id="@+id/height_Label"
         android:textSize="35sp"
-        android:textColor="#ff1f20ff" />
+        android:textColor="#ffeeff10" />
 
     <EditText
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
         android:text="Weight:"
         android:id="@+id/weight_Label"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffeeff10" />
 
     <EditText
         android:layout_width="match_parent"
@@ -66,7 +66,7 @@
         android:text="Age:"
         android:id="@+id/age_Label"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffeeff10" />
 
     <EditText
         android:layout_width="match_parent"
@@ -84,7 +84,7 @@
         android:text="Sex:"
         android:id="@+id/sex_TextBox"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffeeff10" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
             android:text="Female"
             android:id="@+id/female_RadioButton"
             android:clickable="true"
-            android:textColor="#ffffffff"
+            android:textColor="#ffeeff10"
             android:enabled="true"
             android:onClick="selectedSex"/>
         <RadioButton
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:text="Male"
             android:id="@+id/male_radioButton"
-            android:textColor="#ffffffff"
+            android:textColor="#ffeeff10"
             android:enabled="true"
             android:onClick="selectedSex"/>
     </RadioGroup>
@@ -117,7 +117,7 @@
         android:text="Metabolism:"
         android:id="@+id/metabolism_Label"
         android:textSize="35sp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffeeff10" />
 
     <RadioGroup
         android:layout_width="290dp"
@@ -129,20 +129,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="High"
-            android:id="@+id/high_RadioButton" />
+            android:id="@+id/high_RadioButton"
+            android:textColor="#ffeeff10" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Average"
             android:id="@+id/average_RadioButton"
-            android:checked="true" />
+            android:checked="true"
+            android:textColor="#ffeeff10" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Low"
-            android:id="@+id/low_RadioButton" />
+            android:id="@+id/low_RadioButton"
+            android:textColor="#ffeeff10" />
     </RadioGroup>
 
 </LinearLayout>

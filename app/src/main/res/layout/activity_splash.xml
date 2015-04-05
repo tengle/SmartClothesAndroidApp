@@ -3,13 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:id="@+id/activitySplash_Layout">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SmartClothes"
-        android:id="@+id/companyName"
+        android:id="@+id/companyName_TextView"
         android:textColor="#ffeeff10"
         android:textSize="60dp"
         android:textAlignment="center" />
@@ -18,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Presented by MYS"
-        android:id="@+id/appName"
+        android:id="@+id/appName_TextView"
         android:layout_weight="0.03"
         android:textAlignment="center"
         android:textColor="#ffeeff10"
@@ -27,7 +28,7 @@
     <ImageView
         android:layout_width="272dp"
         android:layout_height="400dp"
-        android:id="@+id/companyLogo"
+        android:id="@+id/companyLogo_ImageView"
         android:src="@drawable/mys_logo"
         android:layout_gravity="center_horizontal" />
 
